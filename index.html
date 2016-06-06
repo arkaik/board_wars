@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico">
+    <title>Board Wars</title> 
+    <script type="text/javascript" src="cocos2d-js-v3.8.js" charset="UTF-8"></script>
+  </head>
+<body>   
+    <canvas id="gameCanvas" width="850" height="480"></canvas>
+    <script type="text/javascript">
+          window.onload = function(){
+              cc.game.onStart = function(){
+                  //load resources
+                  cc.LoaderScene.preload(g_resources, function () {
+                      cc.director.runScene(new menuScene());
+                  }, this);
+              };
+              cc.game.run("gameCanvas");
+          };
+    </script>
+</body>
+</html>

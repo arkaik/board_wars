@@ -1,0 +1,11 @@
+{
+    "debugMode"     : 1,
+    "frameRate"     : 60,
+    "id"            : "gameCanvas",
+    "renderMode"    : 1,
+    "jsList"        : [
+    	"src/resource.js?v=2",
+    	"src/util.js?v=2",
+    	"src/hwair.js?v=2"
+    ]
+}
